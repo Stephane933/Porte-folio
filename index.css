@@ -1,0 +1,545 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+html {
+	height: 100%;
+}
+
+.menuClassA{
+	color: #C0C0C0;
+}
+
+.list{
+
+	color: #C0C0C0;
+	margin-top: 20px;
+	margin-left: 10px;
+	list-style: none;	
+}
+
+.list:after{
+	height: 1px;
+	width: 190px;
+	background-color: white;
+	content: '';
+	display: block;
+	margin-top: 11px;
+	opacity: 1;
+
+}
+
+li:hover a{
+
+	list-style: none;
+	margin-left: 6%;
+	transition: 0.2s ease-out;
+	font-family: 'Oswald', sans-serif;
+	color: rgb(216,191,216);
+	border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+	padding-top: -40px;
+	
+}
+
+
+body{
+
+	background-image: url("http://orig11.deviantart.net/b3ae/f/2014/354/7/f/tumblr__background_gif_by_chartfish-d8aiscn.gif");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+
+}
+
+
+#menu{
+
+	width: 220px;
+	height: 420px;
+	padding-top: 15px;
+	margin-top: -200px;
+	margin-left: 1px;
+	list-style: none;
+	font-family: 'Handlee', cursive; 
+	font-size: 25px;
+	color: #C0C0C0;
+	background-image: url("http://www.nycastings.com/wp-content/uploads/2015/09/NYCastings-BG-Light.jpg");
+
+}
+
+.imgMenu{
+
+	width: 22px;
+	height: 35px;
+	opacity: 1;
+	margin-left: -12px;
+
+}
+
+
+
+
+.cModal {
+
+	visibility: hidden;
+	margin-left: -28%;
+}
+
+.cModal:target {
+
+	visibility: visible;
+	transition: 0.2s linear;
+	margin-left: 0%;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+/***************************Bouton Open && Close home******************************/
+
+.btn-btn-default {
+	position: absolute;
+	margin-top: -140px;
+	margin-left: 600px;
+	width: 30px;
+	height: 50px;
+}
+
+
+.btn-default {
+	
+	padding:2px;
+	background-color: #dcdcdc;
+	border: 1px solid #666;
+	text-decoration: none;
+	margin-left: 159px;
+	margin-top: -32px;
+	position: absolute;
+	opacity: 1;
+}
+
+.btn-default,.btn-btn-default {
+	-webkit-animation: fadeInDownBig 2s cubic-bezier(.19,.9,.02,.92); /* Safari 4+ */
+	-moz-animation: fadeInDownBig 2s cubic-bezier(.19,.9,.02,.92); /* Fx 5+ */
+	-o-animation: fadeInDownBig 4s cubic-bezier(.19,.9,.02,.92); /* Opera 12+ */
+	animation: fadeInDownBig 2s cubic-bezier(.19,.9,.02,.92); /* IE 10+, Fx 29+ */
+	background-color:#ededed;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#777777;
+	padding:6px 24px;
+	
+}
+
+.imageSaturne{
+
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	position: absolute;
+	margin-left: 500px;
+	margin-top: -200px;
+
+}
+
+.animated{
+	border-radius: 50%;
+	backface-visibility: visible;
+	animation-name: flip;
+}
+
+footer{
+	font-family: 'Bangers', cursive;
+	font-size: 15px;
+	color: white;
+	margin-top: 215px;
+	margin-left: 570px;
+
+}
+
+
+h1{
+	margin: auto;
+	margin-left: 380px;
+	left: 100px;
+	margin-top: 90px;
+	color: #777777;
+	font-size: 60px;
+	font-family: 'Bangers', cursive; 
+
+}
+
+.H1name{
+
+	
+	margin-bottom: -30px;
+	-webkit-animation: fadeInDownBig 2s cubic-bezier(.19,.9,.02,.92); /* Safari 4+ */
+	-moz-animation: fadeInDownBig 2s cubic-bezier(.19,.9,.02,.92); /* Fx 5+ */
+	-o-animation: fadeInDownBig 4s cubic-bezier(.19,.9,.02,.92); /* Opera 12+ */
+	animation: fadeInDownBig 2s cubic-bezier(.19,.9,.02,.92); /* IE 10+, Fx 29+ */
+
+}
+
+.Hello{
+	margin-left: 520px;
+	font-family: 'Bangers', cursive;
+	font-size: 25px;
+	color: #777777;  
+
+}
+
+/*****************************Animation CSS*****************************************/
+
+@-webkit-keyframes fadeInDownBig {
+	from {
+		opacity: 0;
+		-webkit-transform: translate3d(0, -2000px, 0);
+		transform: translate3d(0, -2000px, 0);
+	}
+
+	to {
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
+	}
+}
+
+@keyframes fadeInDownBig {
+	from {
+		opacity: 0;
+		-webkit-transform: translate3d(0, -2000px, 0);
+		transform: translate3d(0, -2000px, 0);
+	}
+
+	to {
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
+	}
+}
+
+@keyframes flip {
+	from {
+		-webkit-transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
+		transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
+		-webkit-animation-timing-function: ease-out;
+		animation-timing-function: ease-out;
+	}
+
+	40% {
+		-webkit-transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+		transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+		-webkit-animation-timing-function: ease-out;
+		animation-timing-function: ease-out;
+	}
+
+	50% {
+		-webkit-transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+		transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+		-webkit-animation-timing-function: ease-in;
+		animation-timing-function: ease-in;
+	}
+
+	80% {
+		-webkit-transform: perspective(400px) scale3d(.95, .95, .95);
+		transform: perspective(400px) scale3d(.95, .95, .95);
+		-webkit-animation-timing-function: ease-in;
+		animation-timing-function: ease-in;
+	}
+
+	to {
+		-webkit-transform: perspective(400px);
+		transform: perspective(400px);
+		-webkit-animation-timing-function: ease-in;
+		animation-timing-function: ease-in;
+	}
+}
+/**********************Parallax**********************/
+.parallax-window{
+
+	position: absolute;
+	width: 100%;
+	margin-top: 189px;
+	min-height: 400px;
+	
+}
+
+.imgParallax{
+	margin-top: 53px;
+	width: 100%;
+	height: 675px;
+}
+
+h2,.projet{
+	position: absolute;
+	margin-top: 260px;
+	margin-left: 80px;
+	font-family: 'Lobster', cursive;
+	font-size: 60px;
+	color: white;
+}
+
+.projet2{
+	position: absolute;
+	margin-top: 260px;
+	margin-left: 75px;
+	font-family: 'Lobster', cursive;
+	font-size: 60px;
+	color: black;
+
+}
+/*******************Carrousel**********************/
+.main-gallery{
+	position: absolute;
+	width: 750px;
+	height: 400px;
+	margin-top: 230px;
+	margin-left: 300px;
+	
+}
+
+
+@media screen and ( min-width: 768px ) {
+	/* half-width cells for larger devices */
+	.gallery-cell { width: 100%; }
+}
+
+.gallery:after {
+	content: 'flickity';
+	display: none; /* hide :after */
+}
+
+@media screen and ( min-width: 768px ) {
+	/* disable Flickity for large devices */
+	.gallery:after {
+		content: '';
+	}
+}
+.tofCarou{
+	width: 600px;
+	height: 300px;
+	margin-left:75px;
+	margin-top: 50px;
+	box-shadow: 3px 3px 10px 5px #000;
+}
+
+/*****************************Paragraph Description***********************************/
+
+.Description{
+	position: absolute;
+	width: 570px;
+	height: 270px;
+	border: solid black 2px;
+	margin-left: 391px;
+	margin-top: -25px;
+	color: white;
+	background: url("http://www.nycastings.com/wp-content/uploads/2015/09/NYCastings-BG-Light.jpg"); ;
+	font-family: 'Della Respira', serif;
+	font-size: 15px;
+	overflow: scroll;
+	overflow-x: hidden;
+	padding-left: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 30px;
+}
+
+::-webkit-scrollbar 
+{
+	width: 0.5px;
+	background-color:#4F4F4F;
+	border-radius: 30px; 
+	
+}
+
+::-webkit-scrollbar-button:vertical:increment 
+{
+	height:10px;
+	background-size:39px 30px;
+	background-repeat:no-repeat;
+	
+}
+
+::-webkit-scrollbar-button:vertical:decrement 
+{
+	height:10px;    
+	background-size:39px 30px;
+	background-repeat:no-repeat;   
+	
+}
+/******************************Contact page*********************************/  
+.Contact{
+	width: 100%;
+	background-image: url("iphone_copie.jpg");
+	background-repeat: no-repeat;
+	height: 655.5px;
+	margin-top: 287px;
+	position: absolute;
+	background-size: 100%;
+
+}
+
+.titleContact{
+	font-family: 'Chewy', cursive;
+	font-size: 100px;
+	margin-left: 870px;
+	border: 6px solid #000;
+	-moz-border-bottom-colors:#897048 #917953 #a18a66 #b6a488 #c5b59b #d4c5ae #e2d6c4 #eae1d2;
+	-moz-border-top-colors:  #897048 #917953 #a18a66 #b6a488 #c5b59b #d4c5ae #e2d6c4 #eae1d2;
+	-moz-border-left-colors: #897048 #917953 #a18a66 #b6a488 #c5b59b #d4c5ae #e2d6c4 #eae1d2;
+	-moz-border-right-colors:#897048 #917953 #a18a66 #b6a488 #c5b59b #d4c5ae #e2d6c4 #eae1d2;
+	padding: 45px;
+	margin-top: 40px;
+	background-image: url("fondContact.jpg");
+
+	
+}
+
+.titleContact2{
+	font-family: 'Chewy', cursive;
+	font-size: 100px;
+	margin-left: 890px;
+	color: white;
+	position: absolute;
+	padding: 40px;
+	margin-top: -215px;
+}
+
+.listContact,.listContact2,.listContact3,.listContact4{
+	font-family: 'Vollkorn', serif;
+}
+
+.listContact{
+	background-color: rgba(168, 168, 168, 0.6);
+	width: 475px;
+	height: 55px;
+	display: flex;
+	justify-content: center;
+	margin-left: 190px;
+	margin-top: 65px;
+	position: absolute;
+	transform: rotate(-3.5deg);
+	align-items: center;
+	border-radius: 7.5px;
+}
+
+.logoGit{
+	width: 50px;
+	height: 50px;
+	margin-left: -15px;
+	padding-right: 10px;
+}
+
+.heureMsg{
+	padding-left: 50px;
+	opacity: 0.5;
+	font-size: 12px;
+}
+
+.listContact2{
+	background-color: rgba(168, 168, 168, 0.6);
+	width: 475px;
+	height: 55px;
+	margin-left: 194px;
+	margin-top: 135px;
+	position: absolute;
+	transform: rotate(-3.5deg);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 7.5px;
+
+}
+.logoLinkedin{
+	width: 50px;
+	height: 50px;
+	margin-left: -10px;
+	padding-right: 10px;
+	
+
+}
+.heureMsg1{
+	padding-left: 250px;
+	opacity: 0.5;
+	font-size: 12px
+
+}
+.listContact3{
+	background-color: rgba(168, 168, 168, 0.6);
+	width: 475px;
+	height: 55px;
+	margin-left: 197px;
+	margin-top: 205px;
+	position: absolute;
+	transform: rotate(-3.5deg);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 7.5px;
+
+}
+.logoMessage{
+	width: 50px;
+	height: 50px;
+	margin-left: -6px;
+	padding-right: 10px;
+}
+
+.heureMsg3{
+	padding-left: 215px;
+	opacity: 0.5;
+	font-size: 12px;
+
+}
+
+.listContact4{
+	background-color: rgba(168, 168, 168, 0.6);
+	width: 475px;
+	height: 55px;
+	margin-left: 200px;
+	margin-top: 275px;
+	position: absolute;
+	transform: rotate(-3.5deg);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 7.5px;
+
+
+}
+.logoEmail{
+	width: 40px;
+	height: 40px;
+	margin-left: 5px;
+	padding-right: 10px;
+
+}
+
+.heureMsg4{
+	padding-left: 160px;
+	opacity: 0.5;
+	margin-left: -62px;
+	font-size: 12px;
+}
